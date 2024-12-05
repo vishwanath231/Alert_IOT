@@ -36,4 +36,4 @@ def update(document_id):
     return jsonify({"modified_count": modified_count}), 200
 
 if __name__ == "__main__":
-    application.run(debug=True)
+        application.run(debug=True, host='0.0.0.0', port=5000)
