@@ -31,6 +31,7 @@ def insert_one(post):
     # Access a collection (similar to a table in relational databases)
     collection = db['iot_rest']
 
+    post['Timestamp'] = current_time()
 
     collection.insert_one(post)
     
